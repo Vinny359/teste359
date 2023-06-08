@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX | Soluções de servidores para Pequenas Empresas</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+    .spacer {
+        padding: 20px;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    .container img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container .text {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .image-and-content {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .image-and-content img {
+      max-width: 90%;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .image-and-content p {
+      flex-grow: 1;
+      font-size: 20px;
+    }
+
+    .image-and-content ul {
+      margin: 2;
+      padding: 2;
+      list-style-type: disc;
+    }
+
+    .image-and-content li {
+      margin-bottom: 5px;
+    }
+    
+    /* Estilos CSS para o formulário */
+
+    #imageBanner {
+        max-width: 110%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #textCenter {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #textCenter2 {
+        text-align: center;        
+    }
+
+    form {
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="container">
+    <img id="imageBanner" src="images/DataCenter1.png" alt="Imagem de um grande servidor">
+    <div class="text"><h1>AJAX - A empresa para servidores de empresas de pequeno porte</h1>
+    <h2>Servidores que você pode confiar</h2>
+    <h3>Segurança e desempenho para o seu negócio com o servidor que cabe no seu orçamento.</h3>
+    </div>
+    </div>    
+
+    <p id="textCenter">PORTFÓLIO DA AJAX</p>
+    <div class="image-container">
+        <div>
+          <img src="images/rack1.jpg" alt="Servidor em formato de rack">
+          <p>Os servidores em rack da AJAX maximizam o desempenho na mais ampla variedade de aplicativos e são otimizados para 
+            potencializar seus sistemas a trabalharem juntos e de modo independente. 
+            Eles podem ser pré-configurados, e são testados e certificados.</p>
+        </div>
+        <div>
+          <img src="images/tower1.jpg" alt="Servidor em formato de torre">
+          <p>Os servidores em torre AJAX oferecem desempenho ideal, versatilidade e operações silenciosas 
+            para escritórios pequenos, grandes e remotos. 
+            Disponível em diversos tamanhos, de torres mini a plataformas compatíveis com rack.</p>
+        </div>
+        <div>
+          <img src="images/modular1.jpg" alt="Servidor modular">
+          <p>O portfólio modular da AJAX permite que você adapte, implemente e gerencie 
+            facilmente a infraestrutura enquanto reduz os custos operacionais. 
+            Crie um data center pronto para o futuro com computação, rede e armazenamento facilmente expansíveis.</p>
+        </div>
+      </div>
+      <div class="spacer"></div>   
+      <div class="image-and-content">
+      <img src="images/equipe1.jpg" alt="Imagem de um grupo trabalhando em equipe">
+      <div class="content">
+        <p>
+          A AJAX possui servidores dedicados para uso exclusivo da sua empresa. Aproveite a segurança e desempenho únicos do hardware para desenvolver seus projetos.
+          São máquinas com componentes Enterprise de alta qualidade, que oferecem desempenho e conectividade superiores. Gerencie dados corporativos com agilidade: 
+          escolha entre link de 1Gbps ilimitado ou link de 10Gbps com 100TB de transferência de dados para o servidor. 
+          E para facilitar a sua estratégia de TI, a AJAX conecta servidores dedicados entre Datacenters AJAX com link de fibra ótica de 1Gbps e 10TB de transferência grátis.
+          Com a AJAX você vai além.          
+        </p> 
+        <ul>
+            <li>Link de 1Gbps ilimitado ou 10Gbps com 100TB de transferência por servidor</li>
+            <li>Interconexão entre Datacenters Under inclusa</li>
+            <li>Operação 24×7 alocados dentro de datacenter</li>
+            <li>Atendimento de suporte em até 15 minutos</li>
+          </ul>       
+      </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="image-container">
+        <div>
+          <img src="images/ceo1.jpg" alt="Foto da CEO da empresa, Laura Lins">
+          <p><h2>Laura Lins</h2>
+           "A nossa missão é apresentar o melhor trabalho possível,
+           com qualidade e a apresentação necessária para o melhor futuro da empresa." - CEO</p>
+        </div>
+        <div>
+          <img src="images/diretor1.jpg" alt="Foto de um dos diretores, Paulo Fontes">
+          <p><h2>Paulo Fontes</h2>
+            "Trabalhar com segurança é acreditar que você é a ferramenta mais importante para a empresa." - Diretor</p>
+        </div>
+        <div>
+          <img src="images/gerente1.jpg" alt="Foto de um dos gerentes, Marcio Lopes">
+          <p><h2>Marcio Lopes</h2>
+            "Uma equipe é um grupo de pessoas que confiam umas nas outras." - Gerente
+          </p>
+        </div>
+      </div>
+      
+    <div class="spacer"></div>
+  <h1 id="textCenter">Formulário de Contato</h1>
+  <h2 id="textCenter2"> Gostaria de saber mais sobre os nossos produtos, ou nossa equipe?
+    Preencha o formulário abaixo e entraremos em contato o mais rápido possível!
+  </h2>
+
+  <form action="#" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="city">Cidade:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="state">Estado:</label>
+    <input type="text" id="state" name="state" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
